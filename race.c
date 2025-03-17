@@ -6,6 +6,7 @@ int main() {
     if(pid < 0) {
       printf(1, "Error forking first child.\n");
     } else if (pid == 0) {
+      sleep(5);
       printf(1, "Child 1 Executing\n");
     } else {
       pid = fork(); //fork the second child
